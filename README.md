@@ -1,2 +1,2 @@
 # Introduction-to-Computer-Science-and-Programming-Using-Python
-MIT MOOC
+MITx: 6.00.1x
