@@ -4,7 +4,6 @@
 s = "azcbobobegghakl"
 s = "zyxwvutsrqponmlkjihgfedcba"
 s = "abcbcd"
-
 alphabetic_char = ""
 longest_aplhabet_char = ""
 char_len = len(s)
