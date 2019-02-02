@@ -20,32 +20,3 @@ while answer != "c":
 
 print("Game over. Your secret number was:", guess)
 
-        
-
-    
-
-        
-
-        # min = int(guess / 2)
-        # interval_len = int(len(range(guess, max)) / 2)
-        # print(interval_len)
-        # min = guess
-        # guess = guess + interval_len
-        # guess = guess + min
-
-    # if answer == "l":
-        # interval_len = int(len(range(min, guess)) / 2)
-        # print(interval_len)
-        # guess = guess - interval_len
-
-
-
-
-
-
-
-
-
-
-
-# print("Please think of a number between 0 and 100!")
