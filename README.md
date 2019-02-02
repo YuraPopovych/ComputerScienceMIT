@@ -22,7 +22,7 @@ For example, if s = 'azcbobobegghakl', your program should print:
     ```
 # Week 2
 
-   1. Guess my number. The program works as follows:
+   1. bisectionGuessNumber. The program works as follows:
    
         ```
         you (the user) thinks of an integer between 0 (inclusive) and 100 (not inclusive).
