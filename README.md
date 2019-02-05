@@ -47,4 +47,4 @@ For example, if s = 'azcbobobegghakl', your program should print:
         Game over. Your secret number was: 83
         ```
     1. gcdIter. Find the greatest common division of two positive integer iteratively.
-    2.  
+    2. gcdRecur. Find the greatest common division of two positive integer recursively.  
