@@ -46,3 +46,5 @@ For example, if s = 'azcbobobegghakl', your program should print:
         Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. c
         Game over. Your secret number was: 83
         ```
+    1. gcdIter. Find the greatest common division of two positive integer iteratively.
+    2.  
