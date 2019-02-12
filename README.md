@@ -50,3 +50,12 @@ For example, if s = 'azcbobobegghakl', your program should print:
     3. gcdIter. Find the greatest common division of two positive integer iteratively.
     4. gcdRecur. Find the greatest common division of two positive integer recursively.
     5. polysum. Write a function called polysum that takes 2 arguments, n and s. This function should sum the area and square of the perimeter of the regular polygon. The function returns the sum, rounded to 4 decimal places.
+    6. hangManFunctions.helperFunctions.isWordGuessed. Implement the function isWordGuessed that takes in two parameters - a string, secretWord, and a list of letters, lettersGuessed. This function returns a boolean - True if secretWord has been guessed (ie, all the letters of secretWord are in lettersGuessed) and False otherwise.
+    
+        Example Usage:
+        ```
+        >>> secretWord = 'apple' 
+        >>> lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+        >>> print(isWordGuessed(secretWord, lettersGuessed))
+        False
+        ```
