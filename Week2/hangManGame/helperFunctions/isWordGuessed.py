@@ -17,3 +17,8 @@ def isWordGuessed(secretWord, lettersGuessed):
             if len(tempSecretWord) == 0 :
                 return True
     return False
+
+
+secretWord = 'apple' 
+lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+print(isWordGuessed(secretWord, lettersGuessed))
