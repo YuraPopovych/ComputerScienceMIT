@@ -47,6 +47,6 @@ For example, if s = 'azcbobobegghakl', your program should print:
         Game over. Your secret number was: 83
         ```
 
-       1. gcdIter. Find the greatest common division of two positive integer iteratively.
-       2. gcdRecur. Find the greatest common division of two positive integer recursively.
-       3. polysum. Write a function called polysum that takes 2 arguments, n and s. This function should sum the area and square of the perimeter of the regular polygon. The function returns the sum, rounded to 4 decimal places.
+    3. gcdIter. Find the greatest common division of two positive integer iteratively.
+    4. gcdRecur. Find the greatest common division of two positive integer recursively.
+    5. polysum. Write a function called polysum that takes 2 arguments, n and s. This function should sum the area and square of the perimeter of the regular polygon. The function returns the sum, rounded to 4 decimal places.
