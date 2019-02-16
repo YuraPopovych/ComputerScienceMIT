@@ -16,7 +16,7 @@ def hangman(secretWord):
     * The user should receive feedback immediately after each guess 
       about whether their guess appears in the computers word.
 
-    * After each round, you should also display to the user the 
+
       partially guessed word so far, as well as letters that the 
       user has not yet guessed.
 
