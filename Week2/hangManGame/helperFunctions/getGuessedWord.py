@@ -14,7 +14,6 @@ def getGuessedWord(secretWord, lettersGuessed):
     lettersGuessedLen = len(lettersGuessed)
     secretWordLen = len(secretWord)
     guessedWordsAndPosition = {}
-    
     for letterGuessedIndex in range(lettersGuessedLen):
         letterGuessed = lettersGuessed[letterGuessedIndex]
         for secretLetterIndex in range(secretWordLen):
@@ -33,7 +32,7 @@ def getGuessedWord(secretWord, lettersGuessed):
         
     return guessedLetters
 
-secretWord = 'apple' 
-lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
-print(getGuessedWord(secretWord, lettersGuessed))
+# secretWord = 'apple' 
+# lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+# print(getGuessedWord(secretWord, lettersGuessed))
 

@@ -16,5 +16,5 @@ def getAvailableLetters(lettersGuessed):
     alphabetical_letters_remaining = "".join(alphabetical_letters)
     return alphabetical_letters_remaining
 
-lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
-print(getAvailableLetters(lettersGuessed))
+# lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+# print(getAvailableLetters(lettersGuessed))
