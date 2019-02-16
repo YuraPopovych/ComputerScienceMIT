@@ -19,6 +19,6 @@ def isWordGuessed(secretWord, lettersGuessed):
     return False
 
 
-secretWord = 'apple' 
-lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
-print(isWordGuessed(secretWord, lettersGuessed))
+# secretWord = 'apple' 
+# lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+# print(isWordGuessed(secretWord, lettersGuessed))

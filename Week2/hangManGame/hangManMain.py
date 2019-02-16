@@ -32,31 +32,31 @@ def hangman(secretWord):
     print("Loading word list from file...\n{0} words loaded.".format( str(secretWordListLen) ) )
     greeting = "Welcome to the game, Hangman!\nI am thinking of a word that is {0} letters long.".format(secretWordLen)
     print(greeting)
+    print("-----------")
 
     while guessTry > 0:
       print("You have {0} guesses left.".format( str(guessTry)) )
-      print("Available letters {0}".format(getAvailableLetters(letterSGuessed)))
+      print("Available letters: {0}".format(getAvailableLetters(letterSGuessed)))
       letterGuessed = input("Please guess a letter:")
       guessedWord = getGuessedWord(secretWord, letterSGuessed)   
       if letterGuessed in letterSGuessed:
-      
         print("Oops! You've already guessed that letter:", guessedWord)
+        print("-----------")
       elif letterGuessed in secretWord:
         letterSGuessed.append(letterGuessed)
         guessedWord = getGuessedWord(secretWord, letterSGuessed)
         print("Good guess:", guessedWord)
+        print("-----------")
         if guessedWord == secretWord:
-          return "Congratulations, you won!"
-        guessTry -= 1
+          print("Congratulations, you won!")
+          return
       else:
         letterSGuessed.append(letterGuessed)
         print("Oops! That letter is not in my word:", guessedWord)
+        print("-----------")
         guessTry -= 1
-      
-      
-    
-    
-    print("Sorry, you ran out of guesses. The word was else.")
+    print("Sorry, you ran out of guesses. The word was {0}.".format(secretWord))
+    return
     
 
 
@@ -67,5 +67,5 @@ loadWords = ['apple', 'Yura', 'Random', 'Ajajajajaja', 'ucu', 'libary', 'apple',
 
 hangman(loadWords)
 
-lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+# lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
 # print(getAvailableLetters(lettersGuessed))
