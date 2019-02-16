@@ -62,3 +62,20 @@ For example, if s = 'azcbobobegghakl', your program should print:
         >>> print(isWordGuessed(secretWord, lettersGuessed))
         False
         ```
+        
+   7. hangManFunctions.helperFunctions.getGuessedWord. Next, implement the function getGuessedWord that takes in two parameters - a string, secretWord, and a list of letters, lettersGuessed. This function returns a string that is comprised of letters and underscores, based on what letters in lettersGuessed are in secretWord.
+   Example Usage:
+        ```
+        >>> secretWord = 'apple' 
+        >>> lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+        >>> print(getGuessedWord(secretWord, lettersGuessed))
+        '_ pp_ e'
+        ```
+
+   8. Next, implement the function getAvailableLetters that takes in one parameter - a list of letters, lettersGuessed. This function returns a string that is comprised of lowercase English letters - all lowercase English letters that are not in lettersGuess.
+      Example Usage:
+    
+        ```
+        >>> lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+        >>> print(getAvailableLetters(lettersGuessed))
+        abcdfghjlmnoqtuvwxyz
