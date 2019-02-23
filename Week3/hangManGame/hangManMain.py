@@ -61,9 +61,22 @@ def hangman(secretWord):
 
 
 
+#  the   and  city of , and  of the nine  of Austria. Vienna is Austria
+# city  designated a   Heritage Site. In July 2017 it was  to the "list" of World Heritage in .
 
-loadWords = ['apple', 'Yura', 'Random', 'Ajajajajaja', 'ucu', 'libary', 'apple','bodya','misha', 'javascript', 'clock','kormushka', 'politech']
 
+loadWords = ["federal",
+"capital",
+"largest",
+"Austria",
+"one",
+"states",
+"centre",
+"UNESCO",
+"World",
+"moved",
+"Danger"]
+# loadWords = ['садовий','порошенко', 'торонто', 'панда', 'політех']
 
 hangman(loadWords)
 
