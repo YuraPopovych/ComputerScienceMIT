@@ -1,5 +1,4 @@
-# Introduction-to-Computer-Science-and-Programming-Using-Python
-MITx: 6.00.1x
+Computer science MIT MOOC
 
 # Week 1
 1. problem1. Assume s is a string of lower case characters.
