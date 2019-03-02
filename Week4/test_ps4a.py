@@ -185,16 +185,33 @@ def test_isValidWord(wordList):
     if not failure:
         print("SUCCESS: test_isValidWord()")
 
+def test_calculateHandLen():
+    hand = {'a':1, 'b':2, 'c':3, 'd':4}
+    validHandLen = 10
+    handLen = calculateHandlen(hand)
+    
+    if handLen != validHandLen:
+        print("Expected len " + str(validHandLen) + "but returned len is " + str(handLen) + "For hand", hand )
 
-# wordList = loadWords()
+    print("SUCCESS: test_calculateHandLen")
+
+
+
+
+
+wordList = loadWords()
 print("----------------------------------------------------------------------")
 print("Testing getWordScore...")
 test_getWordScore()
 print("----------------------------------------------------------------------")
 print("Testing updateHand...")
-# test_updateHand()
+test_updateHand()
 print("----------------------------------------------------------------------")
 print("Testing isValidWord...")
-# test_isValidWord(wordList)
+test_isValidWord(wordList)
 print("----------------------------------------------------------------------")
+
+print("Testing calculateHandlen...")
+test_calculateHandLen()
+
 print("All done!")
