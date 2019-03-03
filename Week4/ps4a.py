@@ -297,11 +297,26 @@ def playGame(wordList):
       * If the user inputs anything else, tell them their input was invalid.
  
     2) When done playing the hand, repeat from step 1    
-    """
-    # TO DO ... <-- Remove this comment when you code this function
-    print("playGame not yet implemented.") # <-- Remove this line when you code the function
-   
-
+    """    
+    inputCommand = None
+    new = "n"
+    repeat = "r"
+    end = "e"
+    validInputCommands = [new, repeat, end]
+    hand = None
+    while inputCommand != end:
+        inputCommand = input("Enter n to deal a new hand, r to replay the last hand, or e to end game:")
+        if inputCommand not in validInputCommands:
+            print("Invalid command.")
+        elif inputCommand == new:
+            hand = dealHand(HAND_SIZE)
+            playHand(hand, wordList, HAND_SIZE)
+        elif inputCommand == repeat:
+            if not hand:
+                print("You have not played a hand yet. Please play a new hand first!")
+                print()
+            else:
+                playHand(hand, wordList, HAND_SIZE)
 
 
 #
