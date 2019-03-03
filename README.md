@@ -80,10 +80,10 @@ For example, if s = 'azcbobobegghakl', your program should print:
         abcdfghjlmnoqtuvwxyz
 # Week 3
 
-Here are the requirements for game:
+   hangManGame.
+   Here are the requirements for game:
     The computer  select a word at random from the list of available words that was provided in words.txt.
-
-   The game interactive; the flow of the game should go as follows:
+The game interactive; the flow of the game should go as follows:
 
    At the start of the game, let the user know how many letters the computer's word contains.
 
