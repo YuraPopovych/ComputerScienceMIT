@@ -195,23 +195,53 @@ def test_calculateHandLen():
 
     print("SUCCESS: test_calculateHandLen")
 
+def test_displayHand():
+    hand = {'a':1, 'x':2, 'l':3, 'e':1}
+    displayHand(hand)
 
+
+def test_playHand():
+    #test 1
+    # hand = {'h':1, 'i':1, 'c':1, 'z':1, 'm':2, 'a':1}
+    # n = 7
+    # playHand(hand, wordList, n)
+
+    #test 2
+    # hand = {'w':1, 's':1, 't':2, 'a':1, 'o':1, 'f':1}
+    # n = 7
+    # playHand(hand, wordList, n)
+
+    #test 3
+    hand = {'n':1, 'e':1, 't':1, 'a':1, 'r':1, 'i':2}
+    n = 2
+    playHand(hand, wordList, n)
 
 
 
 wordList = loadWords()
-print("----------------------------------------------------------------------")
-print("Testing getWordScore...")
-test_getWordScore()
-print("----------------------------------------------------------------------")
-print("Testing updateHand...")
-test_updateHand()
-print("----------------------------------------------------------------------")
-print("Testing isValidWord...")
-test_isValidWord(wordList)
+# print("----------------------------------------------------------------------")
+# print("Testing getWordScore...")
+# test_getWordScore()
+# print("----------------------------------------------------------------------")
+# print("Testing updateHand...")
+# test_updateHand()
+# print("----------------------------------------------------------------------")
+# print("Testing isValidWord...")
+# test_isValidWord(wordList)
+# print("----------------------------------------------------------------------")
+
+# print("Testing calculateHandlen...")
+# test_calculateHandLen()
+
+# print("Testing display hand...")
+
+# test_displayHand()
+
+print("Testing play hand...")
+
+test_playHand()
 print("----------------------------------------------------------------------")
 
-print("Testing calculateHandlen...")
-test_calculateHandLen()
+
 
 print("All done!")
