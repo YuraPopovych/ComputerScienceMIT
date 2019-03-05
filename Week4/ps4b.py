@@ -65,7 +65,6 @@ def compPlayHand(hand, wordList, n):
     """
     # Keep track of the total score
     totalScore = 0
-    # As long as there are still letters left in the hand:
     while (calculateHandlen(hand) > 0) :
         # Display the hand
         print("Current Hand: ", end=' ')
@@ -125,7 +124,47 @@ def playGame(wordList):
     wordList: list (string)
     """
     # TO DO... <-- Remove this comment when you code this function
-    print("playGame not yet implemented.") # <-- Remove this when you code this function
+
+
+    inputCommand = None
+    inputUserCommand = None
+    
+    new = "n"
+    repeat = "r"
+    end = "e"
+    validInputCommands = [new, repeat, end]
+    
+    computer = "c"
+    human = "u"
+    validUsers = [computer, human]
+    hand = None
+
+    while inputCommand != end:
+        inputUserCommand = None
+        inputCommand = input("Enter n to deal a new hand, r to replay the last hand, or e to end game:")
+        if inputCommand == end:
+            break
+        if inputCommand == repeat and hand == None:
+            print("You have not played a hand yet. Please play a new hand first!")
+        elif inputCommand not in validInputCommands:
+            print("Invalid command.")
+        else:
+            while inputUserCommand not in validUsers:
+                inputUserCommand = input("Enter u to have yourself play, c to have the computer play:")
+                if inputUserCommand not in validUsers:
+                    print("Invalid command.")
+            if inputCommand == new:
+                if inputUserCommand == human:
+                    hand = dealHand(HAND_SIZE)
+                    playHand(hand, wordList, HAND_SIZE)
+                if inputUserCommand == computer:
+                    hand = dealHand(HAND_SIZE)
+                    compPlayHand(hand, wordList, HAND_SIZE)
+            if inputCommand == repeat:
+                if inputUserCommand == human:
+                    playHand(hand, wordList, HAND_SIZE)
+                if inputUserCommand == computer:
+                    compPlayHand(hand, wordList, HAND_SIZE)
 
         
 #
