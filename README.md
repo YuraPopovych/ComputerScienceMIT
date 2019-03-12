@@ -19,65 +19,7 @@ For example, if s = 'azcbobobegghakl', your program should print:
     ```
     Longest substring in alphabetical order is: abc
     ```
-# Week 2
 
-   1. bisectionGuessNumber. The program works as follows:
-   
-        ```
-        you (the user) thinks of an integer between 0 (inclusive) and 100 (not inclusive).
-        The computer makes guesses, and you give it input - is its guess too high or too low?
-        Using bisection search, the computer will guess the user's secret number!
-        Here is a transcript of an example session:
-        Please think of a number between 0 and 100!
-        Is your secret number 50?
-        Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
-        Is your secret number 75?
-        Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
-        Is your secret number 87?
-        Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. h
-        Is your secret number 81?
-        Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
-        Is your secret number 84?
-        Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. h
-        Is your secret number 82?
-        Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
-        Is your secret number 83?
-        Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. c
-        Game over. Your secret number was: 83
-        ```
-
-   3. gcdIter.Find the greatest common division of two positive integer iteratively.
-   
-   4. gcdRecur.Find the greatest common division of two positive integer recursively.
-   
-   5. polysum. Write a function called polysum that takes 2 arguments, n and s. This function should sum the area and square of the perimeter of the regular polygon. The function returns the sum, rounded to 4 decimal places.
-   6. hangManFunctions.helperFunctions.isWordGuessed. Implement the function isWordGuessed that takes in two parameters - a string, secretWord, and a list of letters, lettersGuessed. This function returns a boolean - True if secretWord has been guessed (ie, all the letters of secretWord are in lettersGuessed) and False otherwise.
-   
-   Example Usage:
-    
-        ```
-        >>> secretWord = 'apple' 
-        >>> lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
-        >>> print(isWordGuessed(secretWord, lettersGuessed))
-        False
-        ```
-        
-   7. hangManFunctions.helperFunctions.getGuessedWord. Next, implement the function getGuessedWord that takes in two parameters - a string, secretWord, and a list of letters, lettersGuessed. This function returns a string that is comprised of letters and underscores, based on what letters in lettersGuessed are in secretWord.
-   Example Usage:
-        ```
-        >>> secretWord = 'apple' 
-        >>> lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
-        >>> print(getGuessedWord(secretWord, lettersGuessed))
-        '_ pp_ e'
-        ```
-
-   8. Next, implement the function getAvailableLetters that takes in one parameter - a list of letters, lettersGuessed. This function returns a string that is comprised of lowercase English letters - all lowercase English letters that are not in lettersGuess.
-      Example Usage:
-    
-        ```
-        >>> lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
-        >>> print(getAvailableLetters(lettersGuessed))
-        abcdfghjlmnoqtuvwxyz
 # Week 3
 
    hangManGame.
@@ -130,4 +72,7 @@ Scoring
   For example, 'weed' would be worth 32 points ((4+1+1+2) for the four letters, then multiply by len('weed') to get (4+1+1+2)*4 = 32). Be sure to check that the hand actually has 1 'w', 2 'e's, and 1 'd' before scoring the word!
 
   As another example, if n=7 and you make the word 'waybill' on the first try, it would be worth 155 points (the base score for 'waybill' is (4+1+4+3+1+1+1)*7=105, plus an additional 50 point bonus for using all n letters).
+  # Week 5
+  primeNumberGenerator
+  Write a generator, genPrimes, that returns the sequence of prime numbers on successive calls to its next() method: 2, 3, 5, 7, 11, ...
 
