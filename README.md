@@ -73,6 +73,6 @@ Scoring
 
   As another example, if n=7 and you make the word 'waybill' on the first try, it would be worth 155 points (the base score for 'waybill' is (4+1+4+3+1+1+1)*7=105, plus an additional 50 point bonus for using all n letters).
   # Week 5
-  primeNumberGenerator
+  primeNumberGenerator.
   Write a generator, genPrimes, that returns the sequence of prime numbers on successive calls to its next() method: 2, 3, 5, 7, 11, ...
 
